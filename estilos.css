@@ -1,0 +1,72 @@
+/* Fondo de toda la pagina */
+body {
+  font-family: "Segoe UI", Arial, sans-serif;  
+  margin: 0;
+  padding: 40px 20px;  
+  background: #eef2ff;  
+}
+
+/* Caja que guarda todo el acordeon */
+.acordeon {
+  max-width: 600px; 
+  margin: 0 auto; 
+}
+
+/* Titulo y texto de arriba */
+h1 {
+  margin: 0 0 5px;
+  color: #2d3a8c;
+}
+
+.acordeon > p {
+  margin: 0 0 20px;
+  color: #444;
+}
+
+/* Cada pregunta con su respuesta */
+.item {
+  margin-bottom: 10px; 
+}
+
+/* Boton de la pregunta */
+.pregunta {
+  display: flex;
+  justify-content: space-between; 
+  width: 100%;
+  padding: 15px;
+  background: #3b5bdb; 
+  color: white;
+  border: 0;
+  border-radius: 10px;  
+  font-size: 17px;
+  text-align: left;
+  cursor: pointer;  
+}
+
+.pregunta:hover {
+  background: #2f4ac0;
+}
+
+.pregunta:focus {
+  outline: 3px solid #ffb703;
+}
+
+/* La respuesta empieza oculta */
+.respuesta {
+  display: none;
+  margin-top: 5px;
+  padding: 5px 15px;
+  background: white;
+  border: 2px solid #3b5bdb;
+  border-radius: 10px;
+}
+
+/* Cuando el item esta abierto se muestra la respuesta */
+.abierto .respuesta {
+  display: block;
+}
+
+/* Cuando esta abierto la flecha se voltea */
+.abierto .flecha {
+  transform: rotate(180deg);
+}
